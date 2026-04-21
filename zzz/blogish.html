@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="_base.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header id="mainHeader" class="header-small">
+  <h1><a href="index.html"><img src="madeleinehhdob-compressed.gif" alt="moogy"></a></h1>
+  <nav id="mainNav">
+    <ul>
+      <li><a href="/">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li class="current-page"><a href="blogish.html">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="posts" class="flow">
+    <h2>Blog</h2>
+    <article class="subsection flow">
+      <h3>One line of CSS for responsive colors</h3>
+      <p>The title is a little misleading, 
+        as it requires a couple pieces be in place, 
+        but, if you're using css custom properties ("variables", colloquially), 
+        to set your background color, 
+        it only takes one line of css 
+        to change the foreground to either black or white.
+        More to come by way of an explanation and more strategies, but here's the code as I'm using it now:</p>
+      <code>color: hsl(from var(--c) 157 54 calc(18 + round(nearest,calc(100 - l),100)));</code>
+    </article>
+</section>
+
+<footer>
+  <div>
+    <p>copyright 2025, Madeleine Herritage</p>
+  </div>
+</footer>
+
+</body>
+</html>
