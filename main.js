@@ -1,29 +1,59 @@
-$('a.original-filter').on('click', function () {
-  console.log('you just clicked to hide anything not original')
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('a.original-filter').addEventListener('click', function(event) {
+    console.log('you just clicked to hide anything not original');
+    
+    document.querySelectorAll('.work').forEach(function(workItem) {
+      workItem.style.display = 'none';
+    });
+    
+    document.querySelectorAll('.no-work').forEach(function(noWorkItem) {
+      noWorkItem.style.display = 'none';
+    });
 
-  $('.work').hide()
-  $('.no-work').hide()
+    document.querySelectorAll('img').forEach(function(img) {
+      img.classList.add('smaller');
+    });
+
+    document.querySelectorAll('.original-work').forEach(function(originalWorkItem) {
+      originalWorkItem.style.display = '';
+    });
+    
+    event.preventDefault();
+  });
+
+  document.querySelector('a.ecommerce-filter').addEventListener('click', function(event) {
+    console.log('you just clicked to only show e-commerce-related projects');
+    
+    document.querySelectorAll('.work').forEach(function(workItem) {
+      workItem.style.display = 'none';
+    });
+
+    document.querySelectorAll('.no-work').forEach(function(noWorkItem) {
+      noWorkItem.style.display = 'none';
+    });
   
-  $('img').addClass('smaller')
-  $('.original-work').show()
-  return false
-})
-
-$('a.ecommerce-filter').on('click', function () {
-  console.log('you just clicked to only show e-commerce-related projects')
-
-  $('.work').hide()
-  $('.no-work').hide()
+    document.querySelectorAll('img').forEach(function(img) {
+      img.classList.add('smaller');
+    });
   
-  $('img').addClass('smaller')
-  $('.ecommerce').show()
-  return false
-})
+    document.querySelectorAll('.ecommerce').forEach(function(ecommerceItem) {
+      ecommerceItem.style.display = '';
+    });
 
-$('a.reset-filters').on('click', function () {
-  console.log('you just clicked to show everything')
-  
-  $('img').removeClass('smaller')
-  $('.work').show()
-  return false
-})
+    event.preventDefault();
+  });
+
+  document.querySelector('a.reset-filters').addEventListener('click', function(event) {
+    console.log('you just clicked to show everything');
+
+    document.querySelectorAll('img').forEach(function(img) {
+      img.classList.remove('smaller');
+    });
+
+    document.querySelectorAll('.work').forEach(function(workItem) {
+      workItem.style.display = '';
+    });
+
+    event.preventDefault();
+  });
+});
