@@ -49,7 +49,7 @@ body {
   /* https://codepen.io/miriamsuzanne/pen/QwEXomP */
   --size--medium: clamp(1em, 22px + 1vi, 1.25em);
 
-  --scale: 1.19;
+  --scale: 1.1;
   /* create the typographic scale! */
   --xx-small: calc(var(--size--medium) * pow(var(--scale), -1));
   --x-small: calc(var(--size--medium) * pow(var(--scale), -.5));
