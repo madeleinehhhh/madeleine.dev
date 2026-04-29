@@ -232,4 +232,6 @@ h2.welcome-intro {
 
 iframe {
   max-width: 100%;
+  aspect-ratio: 560/315;
+  height: auto;
 }
