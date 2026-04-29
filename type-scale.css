@@ -1,0 +1,129 @@
+/* ------------------------------
+ | MODULAR TYPE SCALE
+ | ------------------------------
+ | Helps you create type scales that bring natural rhythm,
+ | consistency, and balance to your designs.
+ |
+ | BASE VALUES:
+ | - Font Size: 16px / 1rem
+ | - Line Height: 24px / 1.5
+ | - Letter Spacing: 3.5% / 0.035em
+ |
+ | SCALE:
+ | - Ratio: 1.50 - Perfect Fifth
+ |
+ | LINE GRID:
+ | - Grid Unit: 4px / 0.25rem
+ |
+ |
+ | Scale ratio is calculated using an equal temperament tuning system.
+ | Created with Precise Type / https://precise-type.com
+ | Tools & Models by Adonis Raul Raduca
+ */
+
+/* --- Font Sizes --- */
+
+:root {
+  /* below the base */
+  --font-size-2b: 0.4375rem;
+  --font-size-1b: 0.6875rem;
+
+  /* the base */
+  --font-size: 1rem;
+
+  /* above the base */
+  --font-size-1: 1.5rem;
+  --font-size-2: 2.25rem;
+  --font-size-3: 3.375rem;
+  --font-size-4: 5.0625rem;
+  --font-size-5: 7.5625rem;
+  --font-size-6: 11.3125rem;
+}
+
+/* --- Line Heights --- */
+
+:root {
+  /* below the base */
+  --line-height-2b: 2.2857;
+  --line-height-1b: 1.8182;
+
+  /* the base */
+  --line-height: 1.5;
+
+  /* above the base */
+  --line-height-1: 1.3333;
+  --line-height-2: 1.2222;
+  --line-height-3: 1.1852;
+  --line-height-4: 1.0864;
+  --line-height-5: 1.0579;
+  --line-height-6: 1.0387;
+}
+
+/* --- Letter Spacings --- */
+
+:root {
+  /* below the base */
+  --letter-space-2b: 0.1186em;
+  --letter-space-1b: 0.0645em;
+
+  /* the base */
+  --letter-space: 0.035em;
+
+  /* above the base */
+  --letter-space-1: 0.0133em;
+  --letter-space-2: -0.0011em;
+  --letter-space-3: -0.0107em;
+  --letter-space-4: -0.0172em;
+  --letter-space-5: -0.0214em;
+  --letter-space-6: -0.0243em;
+}
+
+/* ------------------------------
+ | Examples
+ */
+
+/* --- Default Text --- */
+
+body {
+  font-weight: 400;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-space);
+}
+
+/* --- Headers --- */
+
+:is(h1, h2, h3) {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: var(--font-size-3);
+  line-height: var(--line-height-3);
+  letter-spacing: var(--letter-space-3);
+}
+h2 {
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-2);
+  letter-spacing: var(--letter-space-2);
+}
+h3 {
+  font-size: var(--font-size-1);
+  line-height: var(--line-height-1);
+  letter-spacing: var(--letter-space-1);
+}
+
+/* --- Alternative Text Sizes --- */
+
+:is(p, span, a, ul, ol, dl, li, dt, dd, label, blockquote, code) {
+  &.small-text {
+    font-size: var(--font-size-1b);
+    line-height: var(--line-height-1b);
+    letter-spacing: var(--letter-space-1b);
+  }
+  &.large-text {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-space-1);
+  }
+}
