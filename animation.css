@@ -71,7 +71,7 @@ body {
   --movementLength-y: 0;
   --movementLength-x: 0;
 
-  --blob-size: 50vw;
+  --blob-size: 130vw;
 
   background: linear-gradient(oklch(from var(--clr-quinary-bright) l c h / 0.2) 20%, oklch(from var(--clr-quinary-bright) l c h / 0.4), oklch(from var(--clr-quatrenary-dark) l c h / 0.4) 90%, oklch(from var(--clr-quatrenary-dark) l c h / 0.2));
 }
