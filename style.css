@@ -121,7 +121,7 @@ a {
   position: relative;
   color: var(--link-color);
   text-decoration-style: dotted;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: 1px;
   text-decoration-color: (--link-color);
   border: var(--link-border-width) dotted var(--link-border-color);
   padding: var(--link-border-width);
