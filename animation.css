@@ -29,17 +29,19 @@ body {
   --movementLength-x: 0;
 
   --blob-size: 50vw;
+  
+  --_i: 1;
 
   content: '';
 
   position: fixed;
   z-index: -1;
-  top: var(--movementLength-y);
-  left: var(--movementLength-x);
+  top: calc(var(--movementLength-y) * var(--_i));
+  left: calc(var(--movementLength-x) * var(--_i));
   height: var(--blob-size);
   aspect-ratio: 1;
 
-  rotate: var(--rotationAngle);
+  rotate: calc(var(--rotationAngle) * var(--_i));
 
   clip-path: var(--blob-shape);
   background: oklch(from var(--clr-quinary-bright) l c h / 0.2);
@@ -73,6 +75,8 @@ body {
 
   --blob-size: 130vw;
 
+  --_i: -1;
+
   background: linear-gradient(oklch(from var(--clr-quinary-bright) l c h / 0.2) 20%, oklch(from var(--clr-quinary-bright) l c h / 0.4), oklch(from var(--clr-quatrenary-dark) l c h / 0.4) 90%, oklch(from var(--clr-quatrenary-dark) l c h / 0.2));
 }
 .blob-03 {
@@ -97,6 +101,8 @@ body {
 
   --blob-size: 40vw;
 
+  --_i: -1;
+
   background: linear-gradient(oklch(from var(--clr-quinary-bright) l c h / 0.2) 20%, oklch(from var(--clr-quinary-bright) l c h / 0.4), oklch(from var(--clr-quatrenary-dark) l c h / 0.4) 90%, oklch(from var(--clr-quatrenary-dark) l c h / 0.2));
 }
 .blob-05 {
@@ -120,6 +126,8 @@ body {
   --movementLength-x: 20vw;
 
   --blob-size: 110vw;
+
+  --_i: -1;
 
   /* background: linear-gradient(oklch(from var(--clr-quinary-bright) l c h / 0.2) 20%, oklch(from var(--clr-quinary-bright) l c h / 0.4), oklch(from var(--clr-quatrenary-dark) l c h / 0.4) 90%, oklch(from var(--clr-quatrenary-dark) l c h / 0.2)); */
 }
