@@ -20,6 +20,7 @@ body {
   syntax: '<length-percentage>';
 }
 .blob-01, .blob-02, .blob-03, .blob-04, .blob-05, .blob-06 {
+  /* https://css-generators.com/blob/ */
   --blob-shape: shape(from 96.41% 45.35%, curve to 97.74% 54.92% with 97.60% 50.00%, curve to 96.64% 64.66% with 97.88% 59.84%, curve to 91.87% 73.08% with 95.39% 69.48%, curve to 85.64% 80.66% with 88.35% 76.69%, curve to 79.38% 88.04% with 82.93% 84.64%, curve to 71.56% 94.07% with 75.83% 91.43%, curve to 62.18% 96.42% with 67.30% 96.71%, curve to 52.27% 97.97% with 57.07% 96.14%, curve to 42.68% 98.30% with 47.47% 99.81%, curve to 33.75% 94.17% with 37.89% 96.79%, curve to 25.42% 89.36% with 29.62% 91.55%, curve to 17.61% 84.04% with 21.23% 87.17%, curve to 10.80% 77.22% with 13.98% 80.92%, curve to 5.67% 69.02% with 7.62% 73.53%, curve to 3.42% 59.64% with 3.72% 64.52%, curve to 2.68% 49.96% with 3.11% 54.77%, curve to 2.53% 40.17% with 2.25% 45.14%, curve to 5.08% 30.76% with 2.81% 35.19%, curve to 10.66% 22.70% with 7.35% 26.33%, curve to 17.70% 16.07% with 13.98% 19.08%, curve to 25.55% 10.84% with 21.41% 13.06%, curve to 33.77% 5.81% with 29.70% 8.62%, curve to 42.65% 1.59% with 37.83% 3.00%, curve to 52.31% 1.74% with 47.47% 0.18%, curve to 62.12% 3.59% with 57.15% 3.31%, curve to 71.20% 6.64% with 67.08% 3.88%, curve to 78.86% 12.65% with 75.31% 9.39%, curve to 86.34% 18.94% with 82.40% 15.91%, curve to 91.79% 26.69% with 90.27% 21.97%, curve to 94.26% 36.06% with 93.30% 31.42%, curve to 96.41% 45.35% with 95.22% 40.71%);
   --_timing-blobby: 40s;
   --_timing-movement: 600s;
