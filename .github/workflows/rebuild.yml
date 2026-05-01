@@ -16,3 +16,10 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build
+      - name: Commit and push updated CSS
+        run: |
+          git config user.email "css-sync@madeleine.dev"
+          git config user.name "CSS Sync Bot"
+          git add css/shared.css
+          git diff --staged --quiet || git commit -m "chore: sync shared CSS"
+          git push
