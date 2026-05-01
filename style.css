@@ -1,22 +1,13 @@
-@font-face {
-  font-family: 'Space Grotesk';
-  src: url('/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('woff2');
-  font-weight: <weight>;
-  font-optical-sizing: auto;
-}
-
-body {
-  --flow-space: clamp(0.5em, 0.5em + 1vw, 1em);
-
-  --clr-bg: #f6f1ee;
-  --clr-fg: #182024;
-  --clr-secondary-dark: #044488;
-  --clr-secondary-bright: #0482cb;
-  --clr-secondary-light: #71bfe9;
-  --clr-tertiary-bright: #7f9b47;
-  --clr-quatrenary-dark: #9e3f4e;
-  --clr-quatrenary-light: #FFC9B9;
-  --clr-quinary-bright: #dcb338;
+:root {
+    --clr-bg: var(--clr-lightbeige, #f6f1ee);
+  --clr-fg: var(--clr-darkteal, #182024);
+  --clr-secondary-dark: var(--clr-darkblue, #044488);
+  --clr-secondary-bright: var(--clr-brightblue, #0482cb);
+  --clr-secondary-light: var(--clr-lightblue, #71bfe9);
+  --clr-tertiary-bright: var(--clr-greenbright, #7f9b47);
+  --clr-quatrenary-dark: var(--clr-maroonish, #9e3f4e);
+  --clr-quatrenary-light: var(--clr-paledpeach, #FFC9B9);
+  --clr-quinary-bright: var(--clr-gold, #dcb338);
 
   --link-color: var(--clr-secondary-dark);
   --link-decoration-color: var(--clr-secondary-bright);
@@ -24,43 +15,8 @@ body {
   --link-border-color: transparent;
   --link-hover-color: var(--clr-secondary-bright);
   --link-hover-border-color: var(--clr-secondary-light);
-  --ease: linear(0,
-      0.008 1.1%,
-      0.031 2.2%,
-      0.129 4.8%,
-      0.257 7.2%,
-      0.671 14.2%,
-      0.789 16.5%,
-      0.881 18.6%,
-      0.957 20.7%,
-      1.019 22.9%,
-      1.063 25.1%,
-      1.094 27.4%,
-      1.114 30.7%,
-      1.112 34.5%,
-      1.018 49.9%,
-      0.99 59.1%,
-      1);
-
-  --font-body: 'Inter', sans-serif;
-  --font-heading: 'Space Grotesk', serif;
-
-  /* https://codepen.io/miriamsuzanne/pen/QwEXomP */
-  --size--medium: clamp(1em, 22px + 1vi, 1.25em);
-
-  --scale: 1.1;
-  /* create the typographic scale! */
-  --xx-small: calc(var(--size--medium) * pow(var(--scale), -1));
-  --x-small: calc(var(--size--medium) * pow(var(--scale), -.5));
-  --small: calc(var(--size--medium) * pow(var(--scale), -.25));
-  --large: calc(var(--size--medium) * pow(var(--scale), 1));
-  --x-large: calc(var(--size--medium) * pow(var(--scale), 2));
-  --xx-large: calc(var(--size--medium) * pow(var(--scale), 3));
-  --xxx-large: calc(var(--size--medium) * pow(var(--scale), 4));
-  --xxxx-large: calc(var(--size--medium) * pow(var(--scale), 5));
-  --xxxxx-large: calc(var(--size--medium) * pow(var(--scale), 6));
-  --xxxxxx-large: calc(var(--size--medium) * pow(var(--scale), 7));
-
+}
+body {
   font-family: var(--font-body);
   font-size: var(--small);
   line-height: 1.5;

@@ -1,0 +1,25 @@
+{
+  "name": "madeleine.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cp node_modules/@madeleinehhhh/madeleines-shared-css/style.css css/shared.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madeleinehhhh/madeleine.dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/madeleinehhhh/madeleine.dev/issues"
+  },
+  "homepage": "https://github.com/madeleinehhhh/madeleine.dev#readme",
+  "dependencies": {
+    "@madeleinehhhh/madeleines-shared-css": "github:madeleinehhhh/madeleines-shared-css"
+  }
+}
