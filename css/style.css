@@ -1,6 +1,4 @@
 :root {
-    --clr-bg: var(--clr-lightbeige, #f6f1ee);
-  --clr-fg: var(--clr-darkteal, #182024);
   --clr-secondary-dark: var(--clr-darkblue, #044488);
   --clr-secondary-bright: var(--clr-brightblue, #0482cb);
   --clr-secondary-light: var(--clr-lightblue, #71bfe9);
