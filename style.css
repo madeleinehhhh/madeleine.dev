@@ -46,10 +46,6 @@ footer,
 #mainContent {
   padding: calc(0.5vh + 0.5vw) 0;
 }
-p {
-  margin: 1rem 0;
-  line-height: 1.9;
-}
 footer {
   font-size: 0.8em;
   margin: 0;
@@ -98,10 +94,4 @@ h2.welcome-intro {
 }
 .current-page {
   font-style: italic;
-}
-
-iframe {
-  max-width: 100%;
-  aspect-ratio: 560/315;
-  height: auto;
 }
