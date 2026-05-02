@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-node@v5
         with:
           node-version: 24
+      - run: rm -f package-lock.json
       - run: npm install
       - run: cat node_modules/@madeleinehhhh/madeleines-shared-css/shared.css
       - run: npm run build
