@@ -8,13 +8,6 @@
   --clr-quatrenary-dark: var(--clr-maroonish, #9e3f4e);
   --clr-quatrenary-light: var(--clr-paledpeach, #FFC9B9);
   --clr-quinary-bright: var(--clr-gold, #dcb338);
-
-  --link-color: var(--clr-secondary-dark);
-  --link-decoration-color: var(--clr-secondary-bright);
-  --link-border-width: 2px;
-  --link-border-color: transparent;
-  --link-hover-color: var(--clr-secondary-bright);
-  --link-hover-border-color: var(--clr-secondary-light);
 }
 body {
   font-family: var(--font-body);
@@ -35,53 +28,6 @@ body {
 
 }
 
-h1,
-.site-title,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--font-heading);
-  font-weight: 400;
-  line-height: 1;
-  margin:0;
-}
-
-h1, h1.site-title{
-  font-size: var(--xxxxxx-large);
-}
-h2 {
-  font-size: var(--xxxxx-large);
-}
-h3 {
-  font-size: var(--xxxx-large);
-}
-h4 {
-  font-size: var(--xxx-large);
-}
-h5 {
-  font-size: var(--xx-large);
-}
-h6 {
-  font-size: var(--x-large);
-}
-.site-title {
-  font-size: var(--small);
-}
-.site-title a {
-  font-weight:normal;
-}
-a {
-  position: relative;
-  color: var(--link-color);
-  text-decoration-style: dotted;
-  text-decoration-thickness: 1px;
-  text-decoration-color: (--link-color);
-  border: var(--link-border-width) dotted var(--link-border-color);
-  padding: var(--link-border-width);
-  transition: all 0.2s var(--ease);
-}
 /* .flow a::before {
   content: '';
   background: var(--link-hover-border-color);
@@ -103,15 +49,6 @@ a:hover::before {
 
 p a, ul a, ol a {
   font-weight: bolder;
-}
-a:hover,
-a:visited:hover,
-a:focus {
-  color: var(--link-hover-color);
-  border-color: var(--link-hover-border-color);
-}
-a:visited {
-  --link-color: var(--clr-secondary-bright);
 }
 
 /* https://piccalil.li/blog/flow-utility/ */
