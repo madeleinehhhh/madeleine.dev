@@ -9,24 +9,6 @@
   --clr-quatrenary-light: var(--clr-paledpeach, #FFC9B9);
   --clr-quinary-bright: var(--clr-gold, #dcb338);
 }
-body {
-  font-family: var(--font-body);
-  font-size: var(--small);
-  line-height: 1.5;
-
-  background-color: var(--clr-bg);
-  color: var(--clr-fg);
-
-}
-
-.container {
-  padding: 4vw 8vw;
-  margin-inline: auto;
-  max-width: 70ch;
-
-  background-color: oklch(from var(--clr-bg) l c h / 0.6);
-
-}
 
 /* .flow a::before {
   content: '';
@@ -46,10 +28,6 @@ a:hover::before {
   60% {opacity: 1;}
   100% {scale: 1.1;opacity: 0;}  
 } */
-
-p a, ul a, ol a {
-  font-weight: bolder;
-}
 
 /* https://piccalil.li/blog/flow-utility/ */
 .flow > * + * {
