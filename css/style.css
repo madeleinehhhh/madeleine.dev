@@ -39,16 +39,6 @@ a:hover::before {
 .coursework {
   font-size: 0.8em;
 }
-header,
-footer,
-#mainContent {
-  padding: calc(0.5vh + 0.5vw) 0;
-}
-footer {
-  font-size: 0.8em;
-  margin: 0;
-  text-align: right;
-}
 h2.welcome-intro {
   font-size: 1.1rem;
   text-align: left;
@@ -64,32 +54,4 @@ h2.welcome-intro {
 .name {
   font-size: clamp(2rem, calc(5vw), 3.6em);
   letter-spacing: 0.01em;
-}
-#mainHeader {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
-  flex-wrap: wrap;
-
-  gap: 0.75em;
-
-  margin-block-end: 2em;;
-}
-#mainNav {
-  width: 100%;
-}
-#mainNav ul {
-  margin:0;
-  padding:0;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  font-size: var(--xx-small);
-}
-#mainNav ul li {
-  padding: 0 0.5em;
-}
-.current-page {
-  font-style: italic;
 }
