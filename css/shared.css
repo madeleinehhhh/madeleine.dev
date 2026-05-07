@@ -10,14 +10,14 @@
    ============================================================================= */
 
 /* — Tokens ------------------------------------------------------------------ */
-@import "./css/tokens/color.css";
-@import "./css/tokens/type.css";
-@import "./css/tokens/space.css";
-@import "./css/tokens/motion.css";
+@import "./tokens/color.css";
+@import "./tokens/type.css";
+@import "./tokens/space.css";
+@import "./tokens/motion.css";
 
 /* — Base -------------------------------------------------------------------- */
-@import "./css/base/fonts.css";
-@import "./css/base/reset.css";
-@import "./css/base/type.css";
-@import "./css/base/layout.css";
-@import "./css/base/animation.css";
+@import "./base/fonts.css";
+@import "./base/reset.css";
+@import "./base/type.css";
+@import "./base/layout.css";
+@import "./base/animation.css";
